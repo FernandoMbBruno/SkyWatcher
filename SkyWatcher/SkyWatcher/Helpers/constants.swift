@@ -27,3 +27,11 @@ struct AppIcons {
     static let heavyRain = Image(systemName: "cloud.bolt.rain.fill")
 }
 
+enum WeatherIcon {
+    case sun, rain, sunWithCloud, heavyRain
+}
+
+enum WeekDays {
+    case mon, tue, wed, thu, fri, sat, sun
+}
+

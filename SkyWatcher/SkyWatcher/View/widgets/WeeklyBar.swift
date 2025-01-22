@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WeeklyBar: View {
-    let itens: [String]
+    let itens: [WeekDays]
     
     var body: some View {
         VStack {
@@ -17,12 +17,16 @@ struct WeeklyBar: View {
                     .background(Color.blue
                     )
                 HStack {
-                    Text("\(item)")
+                    Text("Monday")
                     Spacer()
-                    Text("\(item)")
+                    AppIcons.sun
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .symbolRenderingMode(.multicolor)
+                    
                     Spacer()
-                    Text("\(item)")
-                    Text("\(item)")
+                    Text("10")
+                    Text("10")
                 }
             }
         }
